@@ -3,10 +3,10 @@ def leiaInt(msg):
         try:
             n = int(input(msg))
         except (ValueError, TypeError):
-            print('Erro digite um número inteiro válido.')
+            print('\033[31mErro digite um número inteiro válido.\033[m')
             continue
         except (KeyboardInterrupt):
-            print('Entrada de dados interrompida.')
+            print('\n\033[31mEntrada de dados interrompida.\033[m')
             return 0
         else:
             return n
@@ -23,8 +23,8 @@ def menu(lista):
     cabeçalho('MENU PRINCIPAL')
     c = 1
     for item in lista:
-        print(f'{c} - {item}')
+        print(f'\033[33m{c} - {item}\033[m')
         c += 1
     print(linha())
-    opc = leiaInt('Sua Opção:')
+    opc = leiaInt('\033[32mSua Opção: \033[m')
     return opc
