@@ -4,7 +4,7 @@ from time import sleep
 while True:
     resposta = menu(['Digite uma Palavra','Sair do Sistema'])
     if resposta == 1:
-       print('Opcao1')
+       palavra = input('Digite a Palavra a ser verificada: ')
     elif resposta == 2:
        print('Finalizando...')
        break
