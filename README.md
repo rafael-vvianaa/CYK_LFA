@@ -19,3 +19,5 @@ S => XB | AB
 X => AS
 A => a
 B => b
+
+qualquer dúvida use da forma que está no exemplo dentro do código.
