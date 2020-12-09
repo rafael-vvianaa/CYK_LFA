@@ -1,9 +1,15 @@
 from re import findall
-gramatica = dict()
 
-with open('gramatica.txt', 'r') as file:
+gramatica = dict()
+with open('gramatica_exemplo.txt', 'r') as file:
     for lin in file.readlines():
+        #utilizando um Regex(Regular expression)
         prox = findall(r'[a-zA-Z]+\s\=\>', lin)[0]
         chave = prox.replace('=>', '').strip()
-        gerados = lin.replace(prox, '').strip().split('|')
-        gramatica[chave] = gerados
+        variaveis = lin.replace(prox, '').strip().split('|')
+        gramatica[chave] = variaveis
+
+
+
+
+
