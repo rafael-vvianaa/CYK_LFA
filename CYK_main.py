@@ -17,9 +17,9 @@ while True:
 
 
        def main(palavra, gramatica, matriz, lin):
-           base = matriz[len(matriz) - 1]
-           if (len(base) != 0):
-               if list(gramatica.keys())[0] in base[0]:
+           init = matriz[len(matriz) - 1]
+           if (len(init) != 0):
+               if list(gramatica.keys())[0] in init[0]:
                    print('\033[31mPalavra digitada faz parte da gramatica.\033[m')
                else:
                    print('\033[31mPalavra digitada não faz parte da gramatica.\033[m')
@@ -54,8 +54,8 @@ while True:
                        calcular.append(resultado)
 
                    procurar = ''
-                   for c in calcular:
-                       procurar += c
+                   for x in calcular:
+                       procurar += x
                    matriz[lin].append(procurar)
                else:
 
